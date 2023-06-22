@@ -1,15 +1,81 @@
-.pokeContainer{
+.pokeContainer {
     display: flex;
     flex-direction: column;
 }
 
 
-.pokeCard_body{
+.pokeCard_body {
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
 
-    
+}
+
+.pagination_footer {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.pagination__pages {
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.pagination_btn {
+    border-radius: 2px;
+    padding: 10px;
+    background-color: var(--color-btn);
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+
+.pagination_btn:hover {
+    border: 1.5px solid var(--color-btn);
+    background: transparent;
+    color: black;
+}
+
+@media (max-width:700px) {
+
+    .pagination_footer {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .pagination__pages {
+        font-size: 1rem;
+        font-weight: 450;
+    }
+
+    .pagination_btn {
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.8rem;
+        transition: 0.3s;
+    }
 }

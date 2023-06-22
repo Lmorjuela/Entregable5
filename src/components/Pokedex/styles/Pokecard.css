@@ -79,7 +79,7 @@
 }
 
 .pokecard_stats_label{
-    opacity: 0.5;
+    opacity: 0.7;
     text-transform: uppercase;
     font-size: 0.6rem;
     text-align: center;
@@ -88,6 +88,7 @@
 
 .pokecard_stats_value{
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /* Cards background */
@@ -116,7 +117,7 @@ background: linear-gradient(180deg, rgba(230,144,30,1) 0%, rgba(231,92,53,1) 100
 }
 
 .grass{
-    color: #B1DBBC;
+    color: #91b49b;
 }
 
 .bg-grass{

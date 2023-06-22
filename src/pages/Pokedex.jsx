@@ -12,7 +12,7 @@ const Pokedex = () => {
 
   const { trainerName } = useSelector(states => states)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=30&offset=0'
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=60&offset=0'
 
   const [pokemons, getAllPokemons, hasError, setPokemons] = useFetch(url)
 

@@ -23,9 +23,9 @@ const PokeContainer = ({ pokemons, initialItems, setInitialPage, initialPage, co
                     ))
                 }
             </div >
-            <footer className="pagination__footer">
+            <footer className="pagination_footer">
                 <div className="pagination">
-                    <button className="pagination__btn-prev" onClick={previousPage}
+                    <button className="pagination_btn" onClick={previousPage}
                         disabled={initialPage === 1}
                     >
                         Previous
@@ -34,7 +34,7 @@ const PokeContainer = ({ pokemons, initialItems, setInitialPage, initialPage, co
                 <span className="pagination__pages">{initialPage}</span>
                 <div className="pagination">
                     <button
-                        className="pagination__next"
+                        className="pagination_btn"
                         onClick={nextPage}
                         disable={initialItems?.length < contentPerPage}
                     >
