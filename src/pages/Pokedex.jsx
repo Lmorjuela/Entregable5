@@ -12,7 +12,7 @@ const Pokedex = () => {
 
   const { trainerName } = useSelector(states => states)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=30&offset=0'
 
   const [pokemons, getAllPokemons, hasError, setPokemons] = useFetch(url)
 
@@ -21,7 +21,7 @@ const Pokedex = () => {
 
 
   const [initialPage, setInitialPage] = useState(1)
-  const contentPerPage = 5
+  const contentPerPage = 6
 
   //Paginación
   const indexOfLastItem = initialPage * contentPerPage

@@ -1,6 +1,6 @@
 .pokecard{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     border-radius: 0.8rem;
     border: 0.5rem solid currentColor;
     cursor: pointer;
@@ -79,9 +79,9 @@
 }
 
 .pokecard_stats_label{
-    opacity: 0.4;
+    opacity: 0.5;
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: center;
     color: black;
 }
@@ -90,22 +90,115 @@
     font-size: 1.1rem;
 }
 
+/* Cards background */
+.normal{
+    color: #735259;
+}
+
+.bg-normal{
+background: linear-gradient(180deg, rgba(115,82,89,1) 24.28%, rgba(188,107,124,1) 74.77%, rgba(124,63,76,1) 100%);
+}
+
 .fire{
-    color: rgb(237, 118, 20);
+    color: #E75C35;
+}
+
+.bg-fire{
+background: linear-gradient(180deg, rgba(230,144,30,1) 0%, rgba(231,92,53,1) 100%);
 }
 
 .water{
-    color: darkblue
+    color:#1479FB;
 }
 
-.bug{
-    color: aquamarine;
+.bg-water{
+    background: linear-gradient(180deg, rgba(19,50,88,1) 0%, rgba(20,121,251,1) 44.32%, rgba(130,178,241,1) 100%);
 }
 
 .grass{
-    color: greenyellow;
+    color: #B1DBBC;
 }
 
 .bg-grass{
-    background-image: red;
+    background: linear-gradient(180deg, rgba(126,198,197,1) 0%, rgba(171,218,198,1) 47.92%, rgba(202,224,153,1) 100%);
+}
+
+.electric{
+    color: #0C1395;
+}
+
+.bg-electric{
+    background: linear-gradient(180deg, rgba(12,19,149,1) 0%, rgba(43,49,155,1) 23.44%, rgba(112,117,217,1) 58.33%);
+}
+
+.bug{
+    color: #4AB648;
+}
+
+.bg-bug{
+    background: linear-gradient(180deg, rgba(98,219,96,1) 12.33%, rgba(59,176,57,1) 36.98%, rgba(170,255,168,1) 100%);
+}
+
+.poison{
+    color: #5B3184;
+}
+
+.bg-poison{
+    background: linear-gradient(180deg, rgba(91,49,132,1) 0%, rgba(165,100,227,1) 32.66%, rgba(206,155,255,1) 57.91%);
+}
+
+.ground{
+    color: #654008;
+}
+
+.bg-ground{
+    background: linear-gradient(180deg, rgba(101,64,8,1) 0%, rgba(137,92,26,1) 23.44%, rgba(214,150,56,1) 58.33%);
+}
+
+.magic{
+    color: #971B45;
+}
+
+.bg-magic{
+    background: linear-gradient(180deg, rgba(151,27,69,1) 0%, rgba(194,56,103,1) 23.44%, rgba(205,125,152,1) 58.33%);
+}
+
+.dragon{
+    color: #478A93;
+}
+
+.bg-dragon{
+    background: linear-gradient(180deg, rgba(71,138,147,1) 0%, rgba(86,164,174,1) 23.44%, rgba(162,190,193,1) 58.33%);
+}
+
+.rock{
+    color: #7E7E7E;
+}
+
+.bg-rock{
+    background: linear-gradient(180deg, rgba(126,126,126,1) 0%, rgba(141,141,148,1) 27.25%, rgba(211,211,211,1) 57.91%);
+}
+
+.dark {
+    color: #030706;
+}
+
+.bg-dark{
+    background: linear-gradient(180deg, rgba(13,18,17,1) 0%, rgba(90,94,93,1) 27.25%, rgba(90,94,93,1) 57.91%);
+}
+
+.ghost{
+    color: #323569;
+}
+
+.bg-ghost{
+    background: linear-gradient(180deg, rgba(50,53,105,1) 0%, rgba(69,74,168,1) 27.25%, rgba(120,125,218,1) 57.91%);
+}
+
+.fairy{
+    color: #8010cb;
+}
+
+.bg-fairy{
+    background: linear-gradient(180deg, rgba(128,16,203,1) 0%, rgba(141,64,193,1) 27.25%, rgba(163,93,209,1) 57.91%);
 }

@@ -1,0 +1,15 @@
+.pokeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pokeCard_body{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    
+}

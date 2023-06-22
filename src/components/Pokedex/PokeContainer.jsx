@@ -1,4 +1,5 @@
 import PokeCard from "./PokeCard"
+import './styles/PokeContainer.css'
 
 const PokeContainer = ({ pokemons, initialItems, setInitialPage, initialPage, contentPerPage }) => {
 
@@ -11,15 +12,17 @@ const PokeContainer = ({ pokemons, initialItems, setInitialPage, initialPage, co
     }
 
     return (
-        <div>
-            {
-                initialItems?.map(pokemon => (
-                    <PokeCard
-                        key={pokemon.url}
-                        url={pokemon.url}
-                    />
-                ))
-            }
+        <div className="pokeContainer">
+            <div div className="pokeCard_body" >
+                {
+                    initialItems?.map(pokemon => (
+                        <PokeCard
+                            key={pokemon.url}
+                            url={pokemon.url}
+                        />
+                    ))
+                }
+            </div >
             <footer className="pagination__footer">
                 <div className="pagination">
                     <button className="pagination__btn-prev" onClick={previousPage}
