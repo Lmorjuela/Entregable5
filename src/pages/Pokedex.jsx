@@ -20,6 +20,15 @@ const Pokedex = () => {
   const [types, getAllTypes] = useFetch(urlTypes)
 
 
+  const [initialPage, setInitialPage] = useState(1)
+  const contentPerPage = 5
+
+  //Paginación
+  const indexOfLastItem = initialPage * contentPerPage
+  const indexOfFirstItem = indexOfLastItem - contentPerPage
+  const initialItems = pokemons?.results.slice(indexOfFirstItem, indexOfLastItem)
+
+
   useEffect(() => {
     if (selectValue === 'all-pokemons') {
       getAllPokemons()
@@ -66,23 +75,29 @@ const Pokedex = () => {
       <div className='body'>
         <p className='body_p'><span className='body_p_span'>Welcome {trainerName}!</span> Here you can find your favorite pokemon. </p>
         <div className='body_form'>
-        <form className= 'form' onSubmit={handleSubmit}>
-          <input placeholder='Look for a pokemon'className='form_input' ref={searchPokemon} type="text" />
-          <button className='search_btn'>Search</button>
-        </form>
-        <select className='select' onChange={handleChangeType}>
-          <option className='option_all_pokemons' value="all-pokemons">All pokemons</option>
-          {
-            types?.results.map(typeInfo => (
-              <option value={typeInfo.url} key={typeInfo.url} >
-                {typeInfo.name}
-              </option>
-            ))
-          }
-        </select>
+          <form className='form' onSubmit={handleSubmit}>
+            <input placeholder='Look for a pokemon' className='form_input' ref={searchPokemon} type="text" />
+            <button className='search_btn'>Search</button>
+          </form>
+          <select className='select' onChange={handleChangeType}>
+            <option className='option_all_pokemons' value="all-pokemons">All pokemons</option>
+            {
+              types?.results.map(typeInfo => (
+                <option value={typeInfo.url} key={typeInfo.url} >
+                  {typeInfo.name}
+                </option>
+              ))
+            }
+          </select>
         </div>
       </div>
-      <PokeContainer pokemons={pokemons?.results} />
+      <PokeContainer
+        pokemons={pokemons?.results}
+        initialItems={initialItems}
+        setInitialPage={setInitialPage}
+        initialPage={initialPage}
+        contentPerPage={contentPerPage}
+      />
     </div>
   )
 }

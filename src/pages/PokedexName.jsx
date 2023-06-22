@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
 import { useEffect } from "react"
+import Chart from "../components/Chart/Chart"
+import '../components/Pokedex/styles/PokedexName.css'
 
 const PokedexName = () => {
 
@@ -22,8 +24,13 @@ const PokedexName = () => {
                         <>
                             <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
                             <h2>{pokemon?.name}</h2>
+                            <div className="chart">
+                                <p className="stats">stats</p>
+                                {pokemon && <Chart pokemon={pokemon} />}
+                            </div>
                         </>
                     )
+
             }
         </div>
     )
