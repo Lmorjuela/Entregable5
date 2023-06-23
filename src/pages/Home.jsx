@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { setTrainerNameG } from '../store/slices/trainerName.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import '../components/Home/styles/Home.css'
+import './styles/Home.css'
 
 const Home = () => {
 

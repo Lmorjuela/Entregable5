@@ -40,7 +40,7 @@ const Chart = ({ pokemon }) => {
         const { value } = payload;
 
         return (
-            <text x={props.x} y={props.y} dy={8} fill="#ffffff" fontSize={12} textAnchor="middle">
+            <text x={props.x} y={props.y} dy={8} fill="#000" fontWeight={500} fontSize={12} textAnchor="middle">
                 {value}
             </text>
         );
